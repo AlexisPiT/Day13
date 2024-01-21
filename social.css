@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Inconsolata:wght@200..900&family=Inter:wght@100..900&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Nanum+Gothic+Coding&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body{
+    background: url(bg-pattern-top-desktop.svg) no-repeat top left, url(bg-pattern-bottom-desktop.svg) no-repeat right bottom/50%;
+}
+
+
+.container{
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+    font-family: 'League Spartan';
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_component{
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.card_info{
+    width: 90%;
+    
+}
+
+.card_header{
+    display: flex;
+    align-items: center;
+}
+
+.left{
+    width: 40%;
+    padding-right: 10px;
+}
+
+h2{
+    font-size: 3.5rem;
+    color: hsl(300, 43%, 22%);
+}
+
+p{
+    line-height: 1.4rem;
+    padding-top: 10px;
+    font-size: 1.2rem;
+}
+
+.header_prase{
+    color: hsl(300, 43%, 22%);
+    opacity: 0.5;
+}
+
+.rated{
+    font-weight: bold;
+    color: hsl(300, 43%, 22%);
+}
+
+.right{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.content_right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    padding: 15px 10px;
+    background-color: hsl(300, 24%, 96%);
+    margin-bottom: 15px;
+}
+
+.content1{
+    margin-left: 5%;
+}
+
+.content2{
+    margin-left: 15%;
+}
+
+.content3{
+    margin-left: 25%;
+}
+
+.card_bottom{
+    padding: 30px 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.perfil{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 45px;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 15px;
+    color: white;
+    text-align: start;
+}
+
+.perfil_top{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+}
+
+.image{
+    text-align: start;
+}
+
+.perfil_image{
+    border-radius: 50%;
+}
+
+.verified{
+    color: hsl(333, 80%, 67%);
+    padding: 10px 0;
+}
+
+.perfil1{
+    margin-bottom: 25px;
+}
+
+.perfil2{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.perfil3{
+    margin-top: 30px;
+}
+
+.image_name{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.star_image{
+    width: 85px;
+    height: 20px;
+    background-image: url(icon-star.svg);
+    background-repeat: repeat-x;
+}
+
+@media screen and (max-width: 600px) {
+    *{
+        overflow: scroll;
+    }
+    body{
+        background: url(bg-pattern-top-mobile.svg) no-repeat top left, url(bg-pattern-bottom-mobile.svg) no-repeat right bottom/90%;
+    }
+    .container{
+        height: auto;
+    }
+    .card_info{
+        flex-direction: column;
+    }
+    .card_header{
+        flex-direction: column;
+    }
+
+    .left{
+        width: 90%;
+        text-align: center;
+    }
+    .right{
+        width: 90%;
+        padding: 0;
+    }
+    .content_right{
+        margin: 15px 0 ;
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .card_bottom{
+        flex-direction: column;
+        gap: 0;
+        padding-bottom: 15px;
+    }
+
+    .image{
+        width: 80px;
+    }
+
+    .perfil_top{
+        gap: 15px;
+    }
+}
